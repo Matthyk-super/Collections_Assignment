@@ -19,9 +19,8 @@ grade4 = float(input("Enter grade 4: "))
 grade5 = float(input("Enter grade 5: "))
 #The print is just there to separate the line between grade5 and print student_name
 print()
-total_score = grade1 + grade2 + grade3 + grade4 + grade5
-average_score = total_score / 5
-
+grades_list = [grade1, grade2, grade3, grade4, grade5]
+average_score = sum(grades_list) / 5
 letter_grade = get_letter_grade(average_score)
 print(f"{student_name}")
 print(f"Average: {average_score:.1f}")
